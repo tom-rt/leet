@@ -33,6 +33,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	return head
 }
 
+// NPI
 func addHugeNumbers(num1, num2 string) string {
 	if len(num1) < len(num2) {
 		num1, num2 = num2, num1
