@@ -11,10 +11,6 @@ func isValid(s string) bool {
 	bracket := 0
 	brace := 0
 
-	if s == "[([]])" {
-		return false
-	}
-
 	var prev int
 	var curr int
 	var isClosing bool
