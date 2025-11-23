@@ -18,8 +18,10 @@ func coinChange(coins []int, amount int) int {
 			total += biggest
 			remain = remain - biggest
 			coinNumber++
+		} else { // if biggest == -1 and remain != 0, there is no possible combination
+			return -1
 		}
-		fmt.Println("biggest", biggest)
+		// fmt.Println("biggest", biggest)
 		// fmt.Println("total", total)
 		// fmt.Println("remain", remain)
 	}
